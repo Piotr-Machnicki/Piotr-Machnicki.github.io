@@ -1,5 +1,107 @@
+:root {
+	--first-color: #000; /*black*/
+	--second-color: #66cdaa; /*mediumaquamarine*/
+	--text-color: #fff; /*white*/
+  }
+
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: var(--text-color);
+  }
+
 body {
-	font-family: 'Open Sans', sans-serif;
-    color: #fff;
-	background-image: url('../images/milkyway.jpg');
+	background-color: black;
+}
+
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+  }
+
+/* NAVIGATION MENU */
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 2rem;
+  }
+  
+  .nav__item a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: block;
+	text-transform: uppercase;
+	padding: 0.8rem;
+	border: 2px solid transparent;
+  }
+  
+  .nav__link a {
+	margin: 1rem;
+  }
+
+  .nav__lang-pl {
+	margin: 1rem 0 1rem 1rem;
+}
+
+  .nav__lang-en {
+	margin: 1rem 1rem 1rem 0;
+	font-weight: 700;
+}
+
+  .nav__item p {
+	font-size: 1.5rem;
+	color: var(--text-color);
+	display: block;
+  }
+
+  nav a:hover {
+	border: 2px solid var(--second-color);
+  }
+
+  .main__header {
+	font-size: 8rem;
+  }
+
+  .main__2ndLine {
+	margin-left: 40%;
+  }
+
+  .main__flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .main__image-wrapper, .main__text-wrapper {
+	width: 100%;
+  }
+
+  .main__image-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .main__image-wrapper img {
+	width: 20vw;
+	height: auto;
+	margin-bottom: 2rem;
+  }
+
+  .main__text-wrapper p {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 5rem;
+	margin: 2rem 0;
+}
+
+p {
+	font-size: 2rem;
 }
